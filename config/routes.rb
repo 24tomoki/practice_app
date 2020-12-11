@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  root to: 'people#index'
+  get 'people/find'
+  post 'people/find'
   get 'people/edit/:id', to: 'people#edit'
   post 'people/edit/:id', to: 'people#update'
   patch 'people/edit/:id', to: 'people#update'
